@@ -57,7 +57,7 @@ model.add(GlobalAveragePooling1D())
 model.add(Dense(128,activation="relu"))
 model.add(Dense(128,activation="relu"))
 model.add(Dense(128,activation="relu"))
-model.add(Dense(num_classes,activation="relu"))
+model.add(Dense(num_classes,activation="softmax"))
 
 model.compile(loss="sparse_categorical_crossentropy",optimizer="adam",metrics=["accuracy"])
 
